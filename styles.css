@@ -8,11 +8,28 @@ body {
   font-family: 'Muli', sans-serif;
   overflow: hidden;
   margin: 0;
-  background: #111;
+  background: linear-gradient(to bottom, #0c5f6b, #303539);
+
+  border: 1px solid #333;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header {
+  color: #e1f8e9;
+}
+.slide hr {
+  position: relative;
+
+  border: none;
+  background-color: #fff;
+  color: #fff;
+  height: 2px;
+  opacity: 0;
+  top: 540px;
+  right: 280px;
+  width: 200px;
 }
 .container {
   width: 100%;
@@ -40,10 +57,29 @@ body {
   margin: 0;
   opacity: 0;
 }
+.slide h5 {
+  position: absolute;
+  font-size: 18px;
+  bottom: 60px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slide hr {
+  position: absolute;
+  font-size: 18px;
+  bottom: 55px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
 .slide.active {
   flex: 10;
 }
-.slide.active h3 {
+.slide.active h3,
+.slide.active hr,
+.slide.active h5 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
