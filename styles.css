@@ -19,18 +19,6 @@ body {
 header {
   color: #e1f8e9;
 }
-.slide hr {
-  position: relative;
-
-  border: none;
-  background-color: #fff;
-  color: #fff;
-  height: 2px;
-  opacity: 0;
-  top: 540px;
-  right: 280px;
-  width: 200px;
-}
 .container {
   width: 100%;
   display: flex;
@@ -67,11 +55,15 @@ header {
 }
 .slide hr {
   position: absolute;
-  font-size: 18px;
+  background-color: #fff;
+  color: #fff;
+  height: 2px;
   bottom: 55px;
   left: 20px;
   margin: 0;
   opacity: 0;
+  width: 200px;
+  border: none;
 }
 
 .slide.active {
